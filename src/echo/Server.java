@@ -2,7 +2,10 @@ package echo;
 
 import java.io.*;
 import java.net.*;
-
+/*
+* To Run via console: java echo.Server
+* To run via MathHandler: java echo.Server math.MathHandler
+* */
 public class Server {
 
     protected ServerSocket mySocket;

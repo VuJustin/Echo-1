@@ -1,7 +1,9 @@
 package echo;
 
 import java.io.*;
-
+/*
+* To run via Console: java echo.SimpleClient
+* */
 public class SimpleClient extends Correspondent {
 
     protected BufferedReader stdin;
