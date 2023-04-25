@@ -1,12 +1,15 @@
 package echo;
 
-import java.util.Collection;
-import java.util.Map;
-import java.util.Set;
+import java.util.HashMap;
 
-public class Cache implements Map<String, String> {
+public class Cache extends HashMap<String, String> {
+    @Override
+    synchronized public String get(Object key) {
+        return super.get(key);
+    }
 
-    public String search(String request){}
-
-    public void update(String request, String response){}
+    @Override
+    synchronized public String put(String key, String value) {
+        return super.put(key, value);
+    }
 }

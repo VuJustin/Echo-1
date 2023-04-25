@@ -73,7 +73,9 @@ public class Server {
             port = Integer.parseInt(args[1]);
         }
         Server server = new Server(port, service);
-        System.out.println("New Server");
+        System.out.println("Server");
+        System.out.println("Service: " + service);
+        System.out.println("Port: " + port);
         server.listen();
     }
 }

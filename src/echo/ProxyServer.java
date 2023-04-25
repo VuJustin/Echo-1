@@ -43,6 +43,10 @@ public class ProxyServer extends Server {
             peerHost = args[3];
         }
         Server server = new ProxyServer(port, service, peerPort, peerHost);
+        System.out.println("Proxy Server");
+        System.out.println("Service: " + service);
+        System.out.println("Peer Port: " + peerPort);
+        System.out.println("Port: " + port);
         server.listen();
     }
 }

@@ -3,6 +3,7 @@ package echo;
 import java.io.*;
 /*
 * To run via Console: java echo.SimpleClient
+* To exit out of the Server, do CTRL + C
 * */
 public class SimpleClient extends Correspondent {
 
