@@ -24,7 +24,7 @@ public class CacheHandler extends ProxyHandler {
         response = cache.get(msg);
         // If made before
         if(response != null){
-            System.out.println("Request has be made before");
+            System.out.println("Request has been made before");
             // no need to do anything else, response will already have value
         }
         // If not made before
